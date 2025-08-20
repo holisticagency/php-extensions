@@ -1,0 +1,11 @@
+/vendor/
+/composer.lock
+/phpunit.xml
+/.phpunit.cache/
+/.php-cs-fixer.php
+/.php-cs-fixer.cache
+/phpstan.neon
+/bin/tests
+/public/index.php
+/tests/Fixtures/cache/
+!/tests/Fixtures/cache/.gitkeep

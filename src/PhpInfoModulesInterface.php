@@ -1,0 +1,31 @@
+<?php
+
+declare(strict_types=1);
+
+/*
+ * This file is part of holistic-agency/php-extensions.
+ *
+ * (c) JamesRezo <james@rezo.net>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace HolisticAgency\PhpExtensions;
+
+use Psr\SimpleCache\CacheInterface;
+
+/**
+ * @internal
+ *
+ * @author JamesRezo <james@rezo.net>
+ */
+interface PhpInfoModulesInterface
+{
+    public function getCache(): CacheInterface;
+
+    /**
+     * @return string[]
+     */
+    public function search(string $extension, int $emptyLines): array;
+}
